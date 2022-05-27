@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -121,7 +120,7 @@ class _GitHubUsersState extends State<covid> {
                             ),
                             titleWidget(
                                 'Confirmed',
-                                users["All"]["confirmed"].toString() ?? ' ',
+                                users["All"]["confirmed"].toString() ?? '',
                                 Colors.greenAccent),
                             titleWidget(
                                 'Recovered',
@@ -129,7 +128,7 @@ class _GitHubUsersState extends State<covid> {
                                 Colors.redAccent),
                             titleWidget(
                                 'Deaths',
-                                users["All"]["deaths"].toString() ?? ' ',
+                                users["All"]["deaths"].toString() ?? '',
                                 Colors.deepOrange),
                           ],
                         ),
